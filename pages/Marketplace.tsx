@@ -69,7 +69,19 @@ const ProtocolCard = ({ protocol, isConnected }: { protocol: Protocol, isConnect
       <div style={{ transformStyle: 'preserve-3d' }} className="bg-dark-card/60 backdrop-blur-xl border border-gray-800/50 rounded-2xl p-6 shadow-2xl shadow-black/20 flex flex-col h-full">
         <div className="flex justify-between items-start mb-4">
           <div className="flex items-center space-x-3">
-            <img src={protocol.logo} alt={protocol.name} className="w-10 h-10" />
+            <img 
+              src={protocol.logo} 
+              alt={protocol.name} 
+              className="w-10 h-10 rounded-full bg-gray-700 p-1" 
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                target.nextElementSibling?.classList.remove('hidden');
+              }}
+            />
+            <div className="hidden w-10 h-10 rounded-full bg-gradient-to-br from-glow-blue to-glow-purple flex items-center justify-center text-white font-bold text-sm">
+              {protocol.name.charAt(0)}
+            </div>
             <h3 className="text-xl font-bold font-orbitron">{protocol.name}</h3>
           </div>
           <div className={`flex items-center space-x-2 text-sm font-semibold ${riskStyles[protocol.riskLevel].text}`}>
