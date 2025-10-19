@@ -157,10 +157,3 @@ git push origin feature/AmazingFeature
 
 Open a Pull Request
 
-📜 License
-
-Distributed under the MIT License. See LICENSE for more information.
-
-🌐 Connect
-
-💬 Built with ❤️ for the Polygon Buildathon by Team AKINDO.
