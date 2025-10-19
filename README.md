@@ -1,127 +1,166 @@
-Praesidium AI
-Intelligent, Instant, Automated DeFi Insurance.
+🛡️ Praesidium AI
 🚀 Live Demo
-Experience the future of DeFi insurance now: https://praesidium-ai-1.vercel.app/
+
+Experience the future of DeFi insurance today.
 
 📖 About The Project
-Praesidium AI is a decentralized insurance protocol built to solve the biggest problem in DeFi: systemic risk. We replace the slow, subjective, and unreliable claims processes of current providers with a new paradigm of intelligent automation.
 
-The DeFi ecosystem is plagued by hacks, smart contract exploits, and economic failures that have resulted in the loss of billions of dollars and hinder mainstream adoption. Existing insurance solutions rely on manual, governance-based claims voting, which can take weeks and offers no guarantee of a payout.   
+Praesidium AI is a decentralized insurance protocol built to solve one of DeFi’s biggest challenges — systemic risk.
+We replace slow, subjective, and unreliable claims processes with a new paradigm of intelligent automation.
 
-Praesidium AI fundamentally re-architects this model. Our protocol is built on two core technological pillars:
+The DeFi ecosystem faces billions in losses due to hacks, smart contract exploits, and protocol failures. Current insurance models rely on manual, governance-based claims voting, which is slow and uncertain.
+Praesidium AI re-architects this model with automation and AI-driven intelligence.
 
-AI-Powered Risk Engine: The heart of Praesidium is an AI engine that continuously analyzes a vast array of on-chain and off-chain data to generate a dynamic, real-time "Praesidium Score" for every covered protocol. This score directly and transparently determines the premium cost.   
+⚙️ Core Technologies
 
-Automated Parametric Payouts: We completely eliminate the claims committee. Our policies are smart contracts that operate on simple, verifiable "if/then" logic. A policy pays out automatically and instantly when a specific, objectively verifiable on-chain event—a parametric trigger—occurs.   
+1. AI-Powered Risk Engine
+At the heart of Praesidium is an AI engine that continuously analyzes on-chain and off-chain data to generate a dynamic, real-time “Praesidium Score.”
+This score directly determines premium costs — transparent, objective, and dynamic.
 
-This project was developed for the Polygon Buildathon by AKINDO.
+2. Automated Parametric Payouts
+We eliminate claims committees entirely. Policies are smart contracts with “if/then” logic — they pay out instantly when a verifiable on-chain event (parametric trigger) occurs.
 
-Built With
+Built for the Polygon Buildathon by AKINDO.
+
+🧱 Built With
+
 Frontend: React, Ethers.js, Chakra UI
 
-Backend (Smart Contracts): Solidity, Hardhat
+Smart Contracts: Solidity, Hardhat
 
 Blockchain: Polygon
 
 Oracles: Chainlink (for future data feeds)
 
 ✨ Key Features
-AI-Driven Risk Assessment: View dynamic "Praesidium Scores" for major DeFi protocols, providing a transparent measure of risk.
 
-Parametric Insurance: Policies are triggered by objective on-chain events, not subjective votes.   
+AI-Driven Risk Assessment:
+Real-time Praesidium Scores for DeFi protocols, offering transparent, data-backed insights.
 
-Instant & Automated Payouts: When a trigger event occurs, the smart contract executes the payout immediately and automatically. No claims forms, no waiting periods.
+Parametric Insurance:
+Payouts are triggered by objective on-chain events, not community votes.
 
-Policy as an NFT: Your insurance coverage is minted as an NFT, giving you a verifiable and transferable asset that proves your ownership.
+Instant & Automated Payouts:
+Smart contracts execute payouts immediately — no forms, no waiting.
 
-Built for Polygon: Leverages Polygon's high-speed, low-cost infrastructure, making micro-premiums and instant transactions economically viable.   
+Policy as an NFT:
+Each policy is minted as an NFT — a verifiable, transferable proof of ownership.
+
+Built for Polygon:
+Leverages Polygon’s high-speed, low-cost infrastructure for micro-premiums and instant transactions.
 
 🏁 Getting Started
-To get a local copy up and running, follow these simple steps.
 
-Prerequisites
-Node.js (v18 or later)
+Follow these steps to run Praesidium AI locally.
+
+🔧 Prerequisites
+
+Node.js
+ (v18 or later)
 
 npm or yarn
 
-A Web3 wallet like MetaMask or Phantom
+A Web3 wallet (e.g., MetaMask or Phantom)
 
-Installation
-**Clone the repository:**sh git clone https://github.com/your-username/praesidium-ai.git cd praesidium-ai
+📦 Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/praesidium-ai.git
+cd praesidium-ai
 
 
-Install Frontend Dependencies:
+Install frontend dependencies:
 
-Bash
-
-cd client # or your frontend directory name
+cd client
 npm install
-Install Smart Contract Dependencies:
 
-Bash
 
-cd../contracts # or your contracts directory name
+Install smart contract dependencies:
+
+cd ../contracts
 npm install
-Set up Environment Variables: Create a .env file in the contracts directory and add the following:
+
+⚙️ Environment Variables
+
+Create a .env file inside the contracts directory and add:
 
 POLYGON_RPC_URL="YOUR_ALCHEMY_OR_INFURA_URL"
 PRIVATE_KEY="YOUR_WALLET_PRIVATE_KEY"
 POLYGONSCAN_API_KEY="YOUR_POLYGONSCAN_API_KEY"
-Running the Project
-Deploy Smart Contracts: In the contracts directory, run the deployment script:
 
-Bash
+🚀 Running the Project
+
+Deploy Smart Contracts:
 
 npx hardhat run scripts/deploy.js --network polygon
-Note: Update the contract address in your frontend configuration after deployment.
 
-Start the Frontend: In the client directory, run:
 
-Bash
+Update the deployed contract address in your frontend configuration.
+
+Start the Frontend:
 
 npm start
-The application should now be running on http://localhost:3000.
+
+
+The application will be available at:
+👉 http://localhost:3000
 
 🗺️ Roadmap
-Praesidium AI is currently an MVP, but our vision is to build a foundational pillar of the DeFi ecosystem.
 
-[x] Phase 1: MVP Launch (Buildathon)
+ Phase 1: MVP Launch (Buildathon)
 
-Core smart contract architecture on Polygon.
+Core smart contract architecture on Polygon
 
-Functional UI for purchasing policies.
+Functional UI for policy purchase
 
-Demonstration of automated parametric payouts.
+Automated parametric payout demo
 
-[ ] Phase 2: AI Engine Integration
+ Phase 2: AI Engine Integration
 
-Develop and train the machine learning models for dynamic risk scoring.   
+Develop and train ML models for dynamic risk scoring
 
-Integrate the live AI engine to update Praesidium Scores in real-time.
+Integrate live AI engine for real-time Praesidium Scores
 
-Expand coverage to a wider range of Polygon protocols.
+Expand protocol coverage
 
-[ ] Phase 3: Ecosystem Integration & Composability
+ Phase 3: Ecosystem Integration & Composability
 
-Partner with DeFi dashboards and wallets for one-click insurance options.
+One-click insurance via wallet/dashboard integrations
 
-Introduce tokenized underwriting positions (pUTs) to create a new, yield-bearing asset class.
+Tokenized underwriting positions (pUTs)
 
-[ ] Phase 4: The Multi-Chain Future
+ Phase 4: Multi-Chain Future
 
-Leverage Polygon's AggLayer to offer the first truly seamless, aggregated cross-chain insurance products.   
+Leverage Polygon’s AggLayer for cross-chain insurance products
 
 🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Contributions make the open-source community amazing — your help is welcome!
 
 Fork the Project
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Create your Feature Branch
 
-Commit your Changes (git commit -m 'Add some AmazingFeature')
+git checkout -b feature/AmazingFeature
 
-Push to the Branch (git push origin feature/AmazingFeature)
+
+Commit your Changes
+
+git commit -m 'Add some AmazingFeature'
+
+
+Push to the Branch
+
+git push origin feature/AmazingFeature
+
 
 Open a Pull Request
+
+📜 License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+🌐 Connect
+
+💬 Built with ❤️ for the Polygon Buildathon by Team AKINDO.
